@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  background-color: rgb(33, 40, 93);
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+p {
+  margin: 0;
+}
+
+header { 
+  padding: 15px 6% 15px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header h1 {
+  color:white;
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1;
+  display:flex;
+  justify-content: flex-start;
+}
+
+.nav-btn:hover{
+  background-color: aqua;
+  animation: pulse 0.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(.85);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.hero-banner {
+  background-image: url('./Images/images/02-portfolio-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-align: right;
+}
+.Img-pfp{
+  position: absolute;
+    top: 150px;
+    left: 30px;
+    border: 3px black solid;
+    height:150px;
+    width: 150px;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.about{
+  border: white 5px solid;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+}
+
+.about h1 {
+border-right: white 5px solid;
+}
+.about div {
+  padding: 15px;
+}
+
+.work-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.border{
+  border: 5px solid purple;
+}
+.Item1{
+  min-width: 900px;
+  min-height: 300px;
+  margin: 10px;
+  background-image: url("Images/images/Weekone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding: 20px;
+  position: relative;
+  margin: 40px;
+  width: fit-content;
+}
+.item-detail:hover {
+  background-color: var white;
+}
+
+img {
+  height: 300px;
+  max-width: 300px;
+  padding: 30px;
+}
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact nav a {
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  background-image: linear-gradient(270deg, rgb(173, 18, 18) 0%,rgb(173, 18, 18));
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact nav a:hover {
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
+
+
+
